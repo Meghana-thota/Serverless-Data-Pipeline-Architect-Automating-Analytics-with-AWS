@@ -17,7 +17,11 @@ This project demonstrates an **end-to-end retail data pipeline** that automates 
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
+- **Pandas**
+- **Numpy**
+- **Seabron**
+- **ETL**
 - **Python (PySpark)**
 - **Apache Kafka**
 - **AWS S3, Lambda, Glue**
@@ -26,7 +30,7 @@ This project demonstrates an **end-to-end retail data pipeline** that automates 
 
 ---
 
-## 🚀 Steps to Run
+## Steps to Run
 1. **Upload Raw Data** to S3 bucket (`raw/` folder).  
 2. **Lambda Trigger** activates AWS Glue job.  
 3. **Glue Job** runs PySpark ETL script on the incoming data.  
@@ -34,8 +38,10 @@ This project demonstrates an **end-to-end retail data pipeline** that automates 
 
 ---
 
-## 📸 Screenshots
-(Add screenshots from your AWS Console showing S3, Lambda, and Glue setup.)
+##  Screenshots
+<img width="1702" height="640" alt="image" src="https://github.com/user-attachments/assets/0683e295-9e15-42e4-9b76-cb8718269db8" />
+
+
 
 ---
 
