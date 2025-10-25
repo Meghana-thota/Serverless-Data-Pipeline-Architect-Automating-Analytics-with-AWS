@@ -1,0 +1,145 @@
+year,month,category,total_sales
+2013,3,office supplies,213547.0
+2012,2,office supplies,96624.0
+2011,1,office supplies,212494.0
+2011,2,office supplies,59020.0
+2014,5,office supplies,312099.0
+2014,4,office supplies,152072.0
+2012,9,office supplies,489281.0
+2014,7,office supplies,181931.0
+2014,9,office supplies,492365.0
+2013,12,office supplies,454849.0
+2014,10,office supplies,402098.0
+2011,4,office supplies,80439.0
+2012,11,office supplies,394239.0
+2011,5,office supplies,82048.0
+2013,7,office supplies,251402.0
+2014,8,office supplies,306736.0
+2013,2,office supplies,120883.0
+2013,11,office supplies,394727.0
+2014,6,office supplies,507682.0
+2013,4,office supplies,197953.0
+2011,10,office supplies,238292.0
+2011,11,office supplies,316328.0
+2011,9,office supplies,330825.0
+2012,10,office supplies,99093.0
+2012,3,office supplies,206331.0
+2014,2,office supplies,164561.0
+2014,1,office supplies,186282.0
+2013,6,office supplies,296782.0
+2012,7,office supplies,192937.0
+2012,1,office supplies,84347.0
+2014,12,office supplies,773262.0
+2012,6,office supplies,220515.0
+2012,12,office supplies,290307.0
+2013,5,office supplies,217673.0
+2011,6,office supplies,65127.0
+2012,5,office supplies,249237.0
+2013,8,office supplies,227164.0
+2011,12,office supplies,228709.0
+2014,3,office supplies,224816.0
+2014,11,office supplies,492711.0
+2012,8,office supplies,129692.0
+2011,7,office supplies,257663.0
+2011,3,office supplies,150559.0
+2013,9,office supplies,546183.0
+2012,4,office supplies,110626.0
+2013,1,office supplies,64990.0
+2011,8,office supplies,128943.0
+2013,10,office supplies,361381.0
+2011,1,technology,30911.0
+2014,7,furniture,148976.0
+2013,5,furniture,107049.0
+2012,11,technology,103211.0
+2013,6,furniture,187654.0
+2011,9,technology,92255.0
+2011,3,furniture,44782.0
+2011,4,technology,70539.0
+2013,9,technology,138162.0
+2012,2,technology,38122.0
+2012,5,technology,84366.0
+2014,10,furniture,165021.0
+2013,4,technology,106517.0
+2012,8,technology,121240.0
+2011,6,technology,71694.0
+2011,8,technology,80900.0
+2011,9,furniture,95027.0
+2014,6,furniture,136157.0
+2012,3,technology,54277.0
+2013,1,technology,52401.0
+2013,1,furniture,115686.0
+2012,1,furniture,42494.0
+2014,2,furniture,57702.0
+2014,10,technology,249166.0
+2012,4,furniture,54111.0
+2012,6,furniture,81478.0
+2013,10,technology,126700.0
+2011,11,furniture,122911.0
+2014,9,furniture,249592.0
+2013,8,technology,154226.0
+2012,3,furniture,55084.0
+2014,7,technology,168716.0
+2013,6,technology,169778.0
+2013,7,furniture,71865.0
+2011,10,furniture,77416.0
+2013,4,furniture,93767.0
+2012,4,technology,62468.0
+2013,3,technology,71263.0
+2012,1,technology,46208.0
+2014,11,furniture,318577.0
+2013,8,furniture,112309.0
+2012,11,furniture,155161.0
+2011,7,furniture,31383.0
+2014,4,technology,90853.0
+2014,3,furniture,126585.0
+2014,5,technology,92120.0
+2014,5,furniture,137924.0
+2014,8,furniture,163529.0
+2013,5,technology,111378.0
+2014,1,technology,94810.0
+2012,9,technology,114379.0
+2014,12,technology,181098.0
+2012,7,furniture,41494.0
+2012,10,furniture,84826.0
+2012,8,furniture,159903.0
+2012,12,furniture,96848.0
+2013,12,furniture,175223.0
+2014,8,technology,174897.0
+2012,9,furniture,95933.0
+2011,11,technology,113418.0
+2011,4,furniture,31345.0
+2014,9,technology,171006.0
+2013,9,furniture,240859.0
+2014,1,furniture,101897.0
+2012,12,technology,134200.0
+2011,1,furniture,34459.0
+2012,6,technology,98857.0
+2014,12,furniture,354846.0
+2012,5,furniture,97371.0
+2012,10,technology,144273.0
+2011,10,technology,73427.0
+2013,12,technology,134327.0
+2014,6,technology,145360.0
+2011,2,furniture,70863.0
+2011,6,furniture,119447.0
+2014,2,technology,71952.0
+2014,11,technology,222587.0
+2011,5,furniture,44981.0
+2011,8,furniture,102614.0
+2013,11,technology,140452.0
+2013,2,furniture,59121.0
+2011,3,technology,66554.0
+2011,2,technology,38231.0
+2013,7,technology,87785.0
+2011,12,technology,122905.0
+2012,2,furniture,37902.0
+2014,3,technology,95828.0
+2011,12,furniture,166294.0
+2011,5,technology,55662.0
+2014,4,furniture,143327.0
+2012,7,technology,57404.0
+2013,11,furniture,122219.0
+2013,3,furniture,65320.0
+2011,7,technology,42770.0
+2013,2,technology,56569.0
+2013,10,furniture,127805.0
