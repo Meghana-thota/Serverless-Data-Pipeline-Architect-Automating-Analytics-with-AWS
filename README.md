@@ -70,13 +70,15 @@ AWS Deployment
 - Trend: Monthly revenue over time, by region, by product category
 - Breakdown: Sales by region, category share, top customers
 
-Results & Business Impact
+**Results & Business Impact**
+
 Automates ingestion of retail CSVs and transforms them into analytics-ready monthly summaries.
 Reduces manual effort: once set up, new data triggers the full workflow automatically.
 Enables near-real-time business visibility into sales trends, profit margins, region/category performance.
 Demonstrates architecture for scaling: as data volume grows, Parquet + serverless services scale effectively without infrastructure overhead.
 
-Future Enhancements
+**Future Enhancements**
+
 Add streaming ingestion via Apache Kafka (or AWS Kinesis) for real-time/near-real-time data flows.
 Introduce orchestration/scheduling via Apache Airflow or AWS Step Functions to manage dependencies, retries, and monitoring.
 Infrastructure as Code: define AWS resources using Terraform for repeatable, versioned deployments.
