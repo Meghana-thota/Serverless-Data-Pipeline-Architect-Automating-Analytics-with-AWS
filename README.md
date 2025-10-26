@@ -54,6 +54,7 @@ pip install -r requirements.txt
 python src/etl_raw_spark.py       # loads raw CSV to bronze format
 python src/etl_clean_spark.py     # cleans & dedupes → silver
 python src/etl_aggregate_spark.py # computes monthly revenue summaries → gold
+```
 
 AWS Deployment
 
