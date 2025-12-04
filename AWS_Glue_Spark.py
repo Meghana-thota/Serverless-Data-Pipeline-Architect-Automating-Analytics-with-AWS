@@ -13,7 +13,7 @@ from pyspark.context import SparkContext
 from awsglue.context import GlueContext
 from awsglue.job import Job
 
-# ---------- CONFIG / S3 PATHS (YOUR BUCKETS) ----------
+# S3 PATHS (YOUR BUCKETS)
 RAW_FILE = "s3://retail-project-raw/superstore.csv"             # input CSV
 
 # use processed bucket for silver outputs and quarantine
@@ -26,7 +26,7 @@ GOLD     = "s3://retail-dashboard/gold/"
 RUN_ID   = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
 MAX_BAD_FRACTION = 0.05  # 5%
 
-# ---------- GLUE / SPARK ----------
+# GLUE / SPARK
 args = getResolvedOptions(sys.argv, ['JOB_NAME'])
 sc = SparkContext.getOrCreate()
 glue_ctx = GlueContext(sc)
@@ -36,7 +36,7 @@ job = Job(glue_ctx); job.init(args['JOB_NAME'], args)
 spark.conf.set("spark.sql.session.timeZone", "UTC")
 spark.conf.set("spark.sql.shuffle.partitions", "200")
 
-# ---------- HELPERS ----------
+# HELPERS
 def normalize_columns(df):
     for c in df.columns:
         new_c = c.strip().lower()
@@ -61,11 +61,11 @@ def safe_money_to_double(df, colname):
     df = df.withColumn(clean, expr(f"try_cast({clean} as double)"))
     return df, clean
 
-# ---------- 1) EXTRACT ----------
+# 1) EXTRACT 
 df = (spark.read.option("header", True).option("inferSchema", True).csv(RAW_FILE))
 row_in = df.count()
 
-# ---------- 2) TRANSFORM (Silver) ----------
+# 2) TRANSFORM (Silver) 
 df = normalize_columns(df)
 
 order_date_col = find_col(df, ["order_date", "orderdate", "order_date_"])
@@ -116,11 +116,11 @@ if "category" in lower_cols:
 
 good = good.withColumn("year", year(order_date_col)).withColumn("month", month(order_date_col))
 
-# ---------- 3) LOAD (Silver Parquet) ----------
+# 3) LOAD (Silver Parquet) 
 silver_dir = SILVER + "superstore_clean_parquet/"
 (good.write.mode("overwrite").partitionBy("year", "month").parquet(silver_dir))
 
-# ---------- 4) GOLD (Aggregates) ----------
+# 4) GOLD (Aggregates) 
 monthly = (good.groupBy("year", "month")
                 .agg(_sum(col(sales_clean)).alias("total_sales"))
                 .orderBy("year", "month"))
@@ -134,7 +134,7 @@ if cat_col:
     (monthly_cat.coalesce(1).write.mode("overwrite").option("header", True)
         .csv(GOLD + "monthly_revenue_by_category/"))
 
-# ---------- 5) METRICS ----------
+# 5) METRICS 
 metrics = spark.createDataFrame(
     [(RUN_ID, int(row_in), int(good.count()), int(row_bad), float(bad_frac))],
     ["run_id", "row_in", "row_good", "row_bad", "bad_fraction"]
